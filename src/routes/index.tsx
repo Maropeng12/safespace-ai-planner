@@ -45,12 +45,7 @@ function Index() {
             <TaskForm onAdd={addTask} />
             <ProgressSummary total={tasks.length} completed={completed} />
             <CategoryFilter value={filter} onChange={setFilter} />
-            <TaskList
-              tasks={tasks}
-              filter={filter}
-              onToggle={toggleTask}
-              onDelete={deleteTask}
-            />
+            <TaskList tasks={tasks} filter={filter} onToggle={toggleTask} onDelete={deleteTask} />
           </CardContent>
         </Card>
       </div>

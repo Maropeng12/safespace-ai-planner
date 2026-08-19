@@ -28,9 +28,7 @@ export function TaskList({
     return (
       <div className="rounded-2xl border border-dashed border-border bg-card/50 py-12 text-center">
         <p className="text-sm font-medium text-foreground">No tasks here</p>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Add a task to begin your safe space.
-        </p>
+        <p className="mt-1 text-sm text-muted-foreground">Add a task to begin your safe space.</p>
       </div>
     );
   }
