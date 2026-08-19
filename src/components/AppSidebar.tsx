@@ -1,5 +1,14 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { LayoutDashboard, Sparkles, ShieldCheck } from "lucide-react";
+import {
+  LayoutDashboard,
+  Sparkles,
+  ShieldCheck,
+  Mail,
+  FileText,
+  CalendarCheck,
+  BookOpen,
+  MessageCircle,
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -15,11 +24,20 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 
-const items = [
+const workspaceItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
   { title: "AI Assistant", url: "/assistant", icon: Sparkles },
-  { title: "Responsible AI", url: "/responsible-ai", icon: ShieldCheck },
+  { title: "AI Chatbot", url: "/chat", icon: MessageCircle },
 ];
+
+const toolItems = [
+  { title: "Email Generator", url: "/email", icon: Mail },
+  { title: "Notes Summarizer", url: "/notes", icon: FileText },
+  { title: "Task Planner", url: "/planner", icon: CalendarCheck },
+  { title: "Research Assistant", url: "/research", icon: BookOpen },
+];
+
+const aboutItems = [{ title: "Responsible AI", url: "/responsible-ai", icon: ShieldCheck }];
 
 export function AppSidebar() {
   const { state } = useSidebar();
